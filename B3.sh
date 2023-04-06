@@ -1,7 +1,7 @@
 #!/bin/bash 
   
 # Your path
-main_dir="chemin/vers/repertoire/principal" 
+main_dir="" 
   
 # Remove not .mp3 or .wav files
 for album_dir in $(find "$main_dir"/*/* -type d); do 
