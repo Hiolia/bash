@@ -27,7 +27,7 @@ for artist_dir in "$main_dir"/*; do
       # Check names 
       expected_track_name=$(printf "%02d -" $track_num) 
       if [[ ! "$track_file" =~ $expected_track_name ]]; then 
-        echo "Error : file name $track_file do not respect the expected name(must start by $expected_track_name)" 
+        echo "Error : file name $track_file do not respect the expected name (must start by $expected_track_name)" 
         exit 1 
       fi 
       ((track_num++)) 
