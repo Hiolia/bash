@@ -1,9 +1,8 @@
 !/bin/bash
 
-# Your path
 main_dir=base
 
-# Function to display artist list and album count
+
 function artist_list {
   echo "List of artists and album count:"
   for artist_dir in "$main_dir"/*; do
@@ -17,7 +16,7 @@ function artist_list {
   echo ""
 }
 
-# Function to display album list and song count for a given artist
+
 function album_list {
   echo "List of albums and song count for $1:"
   artist_dir="$main_dir/$1"
@@ -34,7 +33,6 @@ function album_list {
   echo ""
 }
 
-# Function to search for artists by name
 function search_artist {
   read -p "Enter artist name: " search_name
   echo "Artists found with '$search_name' in :"
@@ -49,7 +47,7 @@ function search_artist {
   done
   echo ""
 }
- Function to search for songs by name
+
 function search_song {
   read -p "Enter song name: " search_name
   echo "Songs found with '$search_name' in :"
@@ -77,7 +75,6 @@ function search_song {
   echo ""
 }
 
-# Main menu loop
 while true; do
   echo "Menu"
   echo "-------------------"
