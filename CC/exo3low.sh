@@ -8,7 +8,8 @@ fi
 rep=$1
 
 if [ ! -d $rep ]; then
-  echo "$rep n'est pas un dossier valide."
+  echo "$rep n'est pas un dos
+  sier valide."
   exit 1
 fi
 
